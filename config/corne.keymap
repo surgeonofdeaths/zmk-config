@@ -37,7 +37,7 @@
    &none &bhm LGUI A  &bhm LALT S &bhm LCTL D &bhm LSFT F &kp G  &kp H &bhm RSFT J  &bhm RCTL K  &bhm RALT L &bhm RGUI SEMI &none
    &none &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH                                            &none
 
-                 &kp ESC &lt LOWER SPACE &kp LC(B)   &kp RET &lt RAISE BSPC &kp TAB
+                 &kp ESC &lt LOWER SPACE &kp TAB  &kp RET &lt RAISE BSPC &kp LC(B)
                         >;
                 };
                 lower_layer {
