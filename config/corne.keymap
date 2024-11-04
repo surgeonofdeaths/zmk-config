@@ -13,10 +13,10 @@
 #define NUM 3
 
 /*
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
-                        &trans &trans &trans    &trans &trans &trans
+ *  &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+ *  &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+ *  &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
+ *                       &trans &trans &trans    &trans &trans &trans
  */
 
 
