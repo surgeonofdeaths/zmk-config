@@ -11,17 +11,6 @@
 #define LOWER 1
 #define RAISE 2
 
-// https://zmk.dev/docs/keymaps/behaviors/hold-tap
-&lt {
-    tapping-term-ms = <170>; 
-    flavor = "hold-preferred";
-};
-
-&mt {
-    tapping-term-ms = <150>; 
-    flavor = "balanced";
-};
-
 
 / {
         behaviors {
