@@ -56,14 +56,14 @@
                         bindings = <
    &trans &trans  &kp HASH &trans  &kp AMPS  &trans               &kp GRAVE &kp PRCNT &kp STAR  &kp LBKT &kp RBKT   &trans
    &trans &trans  &trans   &trans  &trans    &kp UNDER            &kp DLLR  &kp MINUS &kp LPAR  &kp RPAR &kp QMARK  &trans 
-   &trans &kp LT  &kp GT   &trans  &trans    &kp PIPE             &kp CARET &kp EXCL  &kp LBRC  &kp RBRC &kp AT     &trans 
+   &trans &trans  &kp LT&  &kp GT  &trans    &kp PIPE             &kp CARET &kp EXCL  &kp LBRC  &kp RBRC &kp AT     &trans 
                              &trans &trans  &none             &kp TILDE &kp FSLH  &kp BSLH
                         >;
                 };
                // TODO: toggle two modifiers at once to access             
                num_layer {
                         bindings = <
-   &trans &trans   &kp N7 &kp N8 &kp N9 &kp EQUAL  &trans &trans &trans &trans &trans &trans
+       &trans &trans   &kp N7 &kp N8 &kp N9 &kp EQUAL  &trans &trans &trans &trans &trans &trans
    &trans &kp FSLH &kp N4 &kp N5 &kp N6 &kp PLUS   &trans &trans &trans &trans &trans &trans
    &trans &trans   &kp N1 &kp N2 &kp N3 &kp STAR   &trans &trans &trans &trans &trans &trans
                         &trans &kp N0 &kp MINUS    &trans &trans &trans
