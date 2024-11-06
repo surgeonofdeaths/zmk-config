@@ -47,9 +47,9 @@
                 };
                 nav_layer {
                         bindings = <
-   &ext_power EP_ON   &trans       &trans       &trans       &trans       &trans         &trans &trans &trans &trans &trans &sys_reset
-   &ext_power EP_OFF  &trans       &trans       &trans       &trans       &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &bootloader
-   &ext_power EP_TOG  &trans   &trans       &trans       &trans       &trans         &trans   &trans   &kp DOT &trans    &trans &trans
+   &trans  &trans  &trans  &trans  &trans  &trans         &trans &trans &trans &trans &trans          &trans
+   &trans  &trans  &trans  &trans  &trans  &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &trans 
+   &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans   &kp DOT &trans    &trans  &trans
               &trans &trans &trans       &trans &trans &trans
                         >;
                 };
@@ -57,9 +57,9 @@
                 // TODO: do I really need home row mods for this layer?
                 raise_layer {
                         bindings = <
-   &trans &trans  &kp HASH &trans  &kp AMPS  &trans               &kp GRAVE &kp PRCNT &kp STAR  &kp LBKT &kp RBKT   &trans
-   &trans &trans  &trans   &trans  &trans    &kp UNDER            &kp DLLR  &kp MINUS &kp LPAR  &kp RPAR &kp QMARK  &trans 
-   &trans &trans  &kp LT  &kp GT  &trans    &kp PIPE             &kp CARET &kp EXCL  &kp LBRC  &kp RBRC &kp AT     &trans 
+   &ext_power EP_ON &trans  &kp HASH &trans  &kp AMPS  &trans               &kp GRAVE &kp PRCNT &kp STAR  &kp LBKT &kp RBKT   &trans
+   &ext_power EP_OFF &trans  &trans   &trans  &trans    &kp UNDER            &kp DLLR  &kp MINUS &kp LPAR  &kp RPAR &kp QMARK  &bootloader 
+   &ext_power EP_TOG &trans  &trans   &trans  &trans    &kp PIPE             &kp CARET &kp EXCL  &kp LBRC  &kp RBRC &kp AT     &sys_reset 
                              &trans &trans  &none             &kp TILDE &kp FSLH  &kp BSLH
                         >;
                 };
