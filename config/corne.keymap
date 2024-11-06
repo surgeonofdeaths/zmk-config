@@ -56,7 +56,7 @@
                         bindings = <
    &trans &trans  &kp HASH &trans  &kp AMPS  &trans               &kp GRAVE &kp PRCNT &kp STAR  &kp LBKT &kp RBKT   &trans
    &trans &trans  &trans   &trans  &trans    &kp UNDER            &kp DLLR  &kp MINUS &kp LPAR  &kp RPAR &kp QMARK  &trans 
-   &trans &trans  &kp LT&  &kp GT  &trans    &kp PIPE             &kp CARET &kp EXCL  &kp LBRC  &kp RBRC &kp AT     &trans 
+   &trans &trans  &kp LT  &kp GT  &trans    &kp PIPE             &kp CARET &kp EXCL  &kp LBRC  &kp RBRC &kp AT     &trans 
                              &trans &trans  &none             &kp TILDE &kp FSLH  &kp BSLH
                         >;
                 };
