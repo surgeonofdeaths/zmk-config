@@ -39,17 +39,17 @@
 
                 default_layer {
                         bindings = <
-    &kp Q   &kp Q        &kp W       &kp E       &kp R       &kp T      &kp Y    &kp U       &kp I       &kp O       &kp P         &kp P
-    &kp A   &hm LGUI A   &hm LALT S  &hm LCTL D  &hm LSFT F  &kp G      &kp H    &hm RSFT J  &hm RCTL K  &hm RALT L  &hm RGUI SQT  &kp SQT
-    &kp Z   &kp Z        &kp X       &kp C       &kp V       &kp B      &kp N    &kp M       &kp COMMA   &kp DOT     &kp FSLH      &kp FSLH
-                 &kp ESC &lt NAV SPACE &lt RAISE TAB   &kp RET    &lt NUM BSPC &kp LC(B)
+    &kp TAB   &kp Q        &kp W       &kp E       &kp R       &kp T      &kp Y    &kp U       &kp I       &kp O       &kp P         &none
+    &kp LC(B) &hm LGUI A   &hm LALT S  &hm LCTL D  &hm LSFT F  &kp G      &kp H    &hm RSFT J  &hm RCTL K  &hm RALT L  &hm RGUI SQT  &lt NUM RET
+    &none     &kp Z        &kp X       &kp C       &kp V       &kp B      &kp N    &kp M       &kp COMMA   &kp DOT     &kp FSLH      &none 
+                 &kp ESC &lt NAV SPACE &lt RAISE BSPC     &kp RET    &lt NUM BSPC &kp ESC
                         >;
                 };
                 nav_layer {
                         bindings = <
    &trans  &trans  &trans  &trans  &trans  &trans         &trans &trans &trans &trans &trans          &trans
    &trans  &trans  &trans  &trans  &trans  &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &trans 
-   &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans   &kp DOT &trans    &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans   &trans &trans    &trans  &trans
               &trans &trans &trans       &trans &trans &trans
                         >;
                 };
