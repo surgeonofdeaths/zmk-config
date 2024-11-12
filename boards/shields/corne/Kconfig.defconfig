@@ -57,3 +57,17 @@ endchoice
 endif # LVGL
 
 endif
+
+if SHIELD_CORNE_RIGHT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CORNE_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
