@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
@@ -76,7 +77,7 @@
                 // TODO: do I really need home row mods for this layer?
                 raise_layer {
                         bindings = <
-   &ext_power EP_ON   &trans          &trans        &trans        &trans       &trans        &none   &none   &none   &none   &none   &none
+   &ext_power EP_ON   &trans          &out OUT_USB  &out OUT_TOG  &out OUT_BLE &trans        &none   &none   &none   &none   &none   &none
    &ext_power EP_OFF  &bt BT_CLR_ALL  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR   &trans        &none   &none   &none   &none   &none   &none
    &ext_power EP_TOG  &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &trans        &none   &none   &none   &none   &none   &none
                                  &bt BT_PRV       &bt BT_NXT       &none           &none        &none   &none
