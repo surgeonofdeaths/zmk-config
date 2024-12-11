@@ -59,7 +59,7 @@
                 timeout-ms = <30>;
                 key-positions = <15 16>;
                 bindings = <&kp ESC>;
-                // layers = <0>;
+                layers = <0>;
             };
             tab {
                 timeout-ms = <30>;
