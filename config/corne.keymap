@@ -44,8 +44,7 @@
                 key-positions = <18 19>;
                 bindings = <&caps_word>;
                 layers = <0>;
-            }
-
+            };
         };
         keymap {
                 compatible = "zmk,keymap";
