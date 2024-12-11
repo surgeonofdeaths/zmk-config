@@ -25,6 +25,10 @@
  */
 
 
+&caps_word {    
+    continue-list = <BACKSPACE UNDERSCORE MINUS N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
+
 / {
         behaviors {
             hm: balanced_homerow_mods {
@@ -40,9 +44,15 @@
             compatible = "zmk,combos";
 
             caps_word {
-                timeout-ms = <50>;
-                key-positions = <18 19>;
+                timeout-ms = <30>;
+                key-positions = <17 18>;
                 bindings = <&caps_word>;
+                layers = <0>;
+            };
+            switch_workspace {
+                timeout-ms = <30>;
+                key-positions = <19 20>;
+                bindings = <&kp LA(O)>;
                 layers = <0>;
             };
         };
