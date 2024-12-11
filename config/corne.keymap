@@ -36,6 +36,17 @@
                 bindings = <&kp>, <&kp>;
             };
         };
+        combos {
+            compatible = "zmk,combos";
+
+            caps_word {
+                timeout-ms = <50>;
+                key-positions = <18 19>;
+                bindings = <&caps_word>;
+                layers = <0>;
+            }
+
+        }
         keymap {
                 compatible = "zmk,keymap";
 
@@ -58,10 +69,10 @@
 
                 sym_layer {
                         bindings = <
-   &none   &trans    &kp FSLH  &kp STAR   &kp AMPS   &none         &none   &none   &none   &none   &none   &bootloader
-   &none   &kp GRAVE &kp CARET &kp PRCNT  &kp DLLR   &none         &none   &trans  &trans  &trans  &trans  &none
+   &none   &trans    &kp BSLH  &kp STAR   &kp AMPS   &none         &none   &none   &none   &none   &none   &bootloader
+   &none   &kp GRAVE &kp CARET &kp PRCNT  &kp DLLR   &kp PIPE         &none   &trans  &trans  &trans  &trans  &none
    &none   &trans    &kp HASH  &kp AT     &kp EXCL   &none         &none   &none   &none   &none   &none   &none
-                               &kp UNDER  &kp TILDE  &kp PIPE    &none   &none   &none
+                               &kp UNDER  &kp MINUS  &kp TILDE    &none   &none   &none
                         >;
                 };
                // TODO: toggle two modifiers at once to access             
@@ -73,8 +84,6 @@
                         &trans &trans &trans     &kp MINUS &kp N0 &trans
                         >;
                 };
-                // &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-                // TODO: do I really need home row mods for this layer?
                 raise_layer {
                         bindings = <
    &ext_power EP_ON   &trans          &out OUT_USB  &out OUT_TOG  &out OUT_BLE &trans        &none   &none   &none   &none   &none   &none
