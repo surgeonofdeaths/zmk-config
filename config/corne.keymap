@@ -64,7 +64,7 @@
             enter {
                 timeout-ms = <30>;
                 key-positions = <19 20>;
-                bindings = <&kp RET;
+                bindings = <&kp RET>;
                 // layers = <0>;
             };
         };
