@@ -51,7 +51,7 @@
             };
             switch_workspace {
                 timeout-ms = <30>;
-                key-positions = <8 9>;
+                key-positions = <20 21>;
                 bindings = <&kp LA(O)>;
                 layers = <0>;
             };
