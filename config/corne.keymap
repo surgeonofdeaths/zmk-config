@@ -55,28 +55,16 @@
                 bindings = <&kp LA(O)>;
                 layers = <0>;
             };
-            esc {
-                timeout-ms = <30>;
-                key-positions = <15 16>;
-                bindings = <&kp ESC>;
-                layers = <0>;
-            };
             tab {
                 timeout-ms = <30>;
-                key-positions = <14 15>;
+                key-positions = <15 16>;
                 bindings = <&kp TAB>;
                 layers = <0>;
             };
             enter {
                 timeout-ms = <30>;
-                key-positions = <20 21>;
-                bindings = <&kp RET>;
-                layers = <0>;
-            };
-            backspace {
-                timeout-ms = <30>;
                 key-positions = <19 20>;
-                bindings = <&kp BSPC>;
+                bindings = <&kp RET;
                 // layers = <0>;
             };
         };
