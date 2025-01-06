@@ -67,6 +67,12 @@
                 bindings = <&kp RET>;
                 // layers = <0>;
             };
+            cyrillic_x {
+                timeout-ms = <30>;
+                key-positions = <9 10>;
+                bindings = <&kp LBKT>;
+                layers = <0>;
+            };
         };
         keymap {
                 compatible = "zmk,keymap";
