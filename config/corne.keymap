@@ -16,6 +16,7 @@
 #define SYM 2
 #define NUM 3
 #define RAISE 4
+#define COLEMAK_DH 5
 
 /*
  *  &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
@@ -38,6 +39,12 @@
                 quick-tap-ms = <0>;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
+            };
+            toggle_colemak_dance {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <500>; // adjust if needed
+                bindings = <&kp LC(B)>, <&tog COLEMAK_DH>;
             };
         };
         combos {
@@ -82,7 +89,7 @@
     &none   &kp Q        &kp W       &kp E       &kp R       &kp T      &kp Y    &kp U       &kp I       &kp O       &kp P         &none
     &none   &hm LGUI A   &hm LALT S  &hm LCTL D  &hm LSFT F  &kp G      &kp H    &hm RSFT J  &hm RCTL K  &hm RALT L  &hm RGUI SQT  &none
     &none   &kp Z        &kp X       &kp C       &kp V       &kp B      &kp N    &kp M       &kp COMMA   &kp DOT     &kp FSLH      &none 
-                 &lt NUM ESC &lt NAV SPACE &kp TAB           &lt RAISE RET    &lt SYM BSPC &kp LC(B)
+                 &lt NUM ESC &lt NAV SPACE &kp TAB           &lt RAISE RET    &lt SYM BSPC &toggle_colemak_dance
                         >;
                 };
                 nav_layer {
@@ -119,5 +126,13 @@
                                  &bt BT_PRV       &bt BT_NXT       &none           &none        &none   &none
                         >;
                 };
+                colemak_dh_layer {
+                        bindings = <
+                    &none  &kp Q   &kp W   &kp F   &kp P   &kp B    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
+                    &none  &kp A   &kp R   &kp S   &kp T   &kp G    &kp M   &kp N   &kp E   &kp I   &kp O   &none
+                    &none  &kp Z   &kp X   &kp C   &kp D   &kp V    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
+                                    &lt NUM ESC  &lt NAV SPACE  &lt RAISE RET  &lt SYM BSPC  &toggle_colemak_dance
+                >;
+            };
         };
     };
