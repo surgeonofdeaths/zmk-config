@@ -87,6 +87,8 @@
                 bindings = <&kp LBKT>;
                 layers = <0>;
             };
+
+/*
             question_mark {
                 timeout-ms = <30>;
                 key-positions = <21 22>;
@@ -99,6 +101,8 @@
                 bindings = <&kp UK_UKRAINIAN_I>;
                 layers = <0>;
             };
+
+ */
         };
         keymap {
                 compatible = "zmk,keymap";
