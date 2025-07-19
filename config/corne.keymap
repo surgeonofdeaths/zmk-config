@@ -62,6 +62,12 @@
                 bindings = <&kp LA(TAB)>;
                 layers = <0>;
             };
+            switch_workspace_mirror {
+                timeout-ms = <30>;
+                key-positions = <14 15>;
+                bindings = <&kp LA(TAB)>;
+                layers = <0>;
+            };
             tab {
                 timeout-ms = <30>;
                 key-positions = <15 16>;
@@ -84,6 +90,12 @@
                 timeout-ms = <30>;
                 key-positions = <21 22>;
                 bindings = <&kp QMARK>;
+                layers = <0>;
+            };
+            ukrainian_i {
+                timeout-ms = <30>;
+                key-positions = <13 14>;
+                bindings = <&kp I>;
                 layers = <0>;
             };
         };
