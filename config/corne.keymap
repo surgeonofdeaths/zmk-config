@@ -59,7 +59,7 @@
             switch_workspace {
                 timeout-ms = <30>;
                 key-positions = <20 21>;
-                bindings = <&kp LA(O)>;
+                bindings = <&kp LA(TAB)>;
                 layers = <0>;
             };
             tab {
