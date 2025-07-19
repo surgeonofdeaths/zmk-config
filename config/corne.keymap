@@ -80,6 +80,12 @@
                 bindings = <&kp LBKT>;
                 layers = <0>;
             };
+            question_mark {
+                timeout-ms = <30>;
+                key-positions = <21 22>;
+                bindings = <&kp QMARK>;
+                layers = <0>;
+            };
         };
         keymap {
                 compatible = "zmk,keymap";
