@@ -173,7 +173,7 @@
             label = "GAMING2";
             bindings = <
                     &none   &kp TAB   &kp L   &kp W   &kp T   &kp O    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
-                    &kp P  &kp LSHFT   &kp A   &kp S   &kp D   &kp G    &kp M   &kp N   &kp E   &kp I   &kp O   &none
+                    &kp ESC &kp LSHFT   &kp A   &kp S   &kp D   &kp G    &kp M   &kp N   &kp E   &kp I   &kp O   &none
                     &kp I  &kp LCTRL   &kp J   &kp N   &kp H   &kp K    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
                                     &trans  &kp SPACE &trans   &trans  &trans  &trans
             >;
