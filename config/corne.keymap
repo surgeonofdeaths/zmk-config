@@ -163,7 +163,7 @@
                 gaming_layer {
             label = "GAMING";
             bindings = <
-                    &none   &kp TAB   &kp Q   &kp W   &kp E   &kp R    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
+                    &kp ESC   &kp TAB   &kp Q   &kp W   &kp E   &kp R    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
                     &kp B  &kp LSHFT   &kp A   &kp S   &kp D   &kp F    &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp O   &none
                     &kp M  &kp LCTRL   &kp Z   &kp X   &kp C   &kp V    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
                                     &lt GAMING2 ESC  &kp SPACE &lt GAMING3 SPACE  &lt RAISE RET  &lt SYM BSPC  &tcd
@@ -173,7 +173,7 @@
             label = "GAMING2";
             bindings = <
                     &none   &kp TAB   &kp L   &kp W   &kp T   &kp O    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
-                    &kp ESC &kp LSHFT   &kp A   &kp S   &kp D   &kp G    &kp M   &kp N   &kp E   &kp I   &kp O   &none
+                    &kp P  &kp LSHFT   &kp A   &kp S   &kp D   &kp G    &kp M   &kp N   &kp E   &kp I   &kp O   &none
                     &kp I  &kp LCTRL   &kp J   &kp N   &kp H   &kp K    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
                                     &trans  &kp SPACE &trans   &trans  &trans  &trans
             >;
