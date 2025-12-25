@@ -12,8 +12,7 @@
 #define NUM 3
 #define RAISE 4
 #define GAMING 5
-#define GAMING2 6
-#define GNUMBERS 7
+#define GNUMBERS 6
 
 /*
  *  &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
@@ -77,12 +76,12 @@
                 bindings = <&kp LBKT>;
                 layers = <0>;
             };
-            gaming_layer {
-                timeout-ms = <30>;
-                key-positions = <3 5>;
-                bindings = <&tog 6>; 
-                layers = <0 6>;
-            };
+            /* gaming_layer { */
+            /*     timeout-ms = <30>; */
+            /*     key-positions = <3 5>; */
+            /*     bindings = <&tog 5>;  */
+            /*     layers = <0 6>; */
+            /* }; */
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -98,7 +97,7 @@
                 nav_layer {
                         bindings = <
    &trans  &kp LA(F4)  &trans  &trans  &trans  &trans            &trans   &kp LPAR &kp RPAR &kp LBRC  &kp RBRC      &trans
-   &trans  &kp LC(A)  &trans  &trans  &trans  &trans         &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp SEMI &trans  
+   &trans  &kp LC(A)  &trans  &trans  &trans  &tog GAMING         &kp LEFT &kp DOWN &kp UP   &kp RIGHT &kp SEMI &trans  
    &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans   &trans   &kp LBKT &kp RBKT &key_repeat &trans   &trans
                                     &trans &trans &trans       &trans &kp DEL &trans 
                         >;
@@ -132,19 +131,10 @@
                 gaming_layer {
             label = "GAMING";
             bindings = <
-                    &kp ESC   &kp TAB   &kp Q  &kp W  &kp E  &kp R   &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
+                    &tog DEFAULT &kp TAB   &kp Q  &kp W  &kp E  &kp R   &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
                     &kp F  &kp LSHFT   &kp A   &kp S   &kp D   &kp H    &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp O   &none
                     &kp M  &kp LCTRL   &kp Z   &kp X   &kp C   &kp V    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
                                     &kp ESC  &kp SPACE &sl GNUMBERS     &trans  &trans  &trans
-            >;
-        };
-                gaming_layer_2 {
-            label = "GAMING2";
-            bindings = <
-                    &none   &kp TAB   &kp L   &kp W   &kp T   &kp O    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
-                    &kp P  &kp LSHFT   &kp A   &kp S   &kp D   &kp G    &kp M   &kp N   &kp E   &kp I   &kp O   &none
-                    &kp I  &kp LCTRL   &kp J   &kp N   &kp H   &kp K    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
-                                    &trans  &kp SPACE &trans   &trans  &trans  &trans
             >;
         };
                 gnumbers_layer {
