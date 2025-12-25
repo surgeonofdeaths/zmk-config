@@ -140,16 +140,11 @@
                 gnumbers_layer {
             label = "GNUMBERS";
             bindings = <
-                    &trans  &trans   &trans  &trans  &trans   &kp F10
-                    &trans  &kp N1   &kp N2  &kp N3  &kp N4   &kp N5
-                    &trans  &kp N6   &kp N7  &kp N8  &kp N9   &trans
-                                            &trans  &trans &kp N0 
-
-                    &kp F1     &kp F2     &kp F3     &kp F4     &kp C_VOL_UP &none
-                    &kp F5     &kp F6     &kp F7     &kp F8     &kp C_VOL_DN &none
-                    &kp F9     &kp F10    &kp F11    &kp F12    &kp C_MUTE   &none
-                    &trans     &trans     &trans
+                &trans   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5         &kp F1    &kp F2    &kp F3    &kp F4    &kp C_VOL_UP  &none
+                &trans   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0         &kp F5    &kp F6    &kp F7    &kp F8    &kp C_VOL_DN  &none
+                &trans   &trans   &trans   &trans   &trans   &trans         &kp F9    &kp F10   &kp F11   &kp F12   &kp C_MUTE    &none
+                                  &trans   &trans   &trans                  &trans    &trans    &trans
             >;
         };
         };
-    };
+};
