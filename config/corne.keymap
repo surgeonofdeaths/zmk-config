@@ -11,10 +11,9 @@
 #define SYM 2
 #define NUM 3
 #define RAISE 4
-#define COLEMAK_DH 5
-#define GAMING 6
-#define GAMING2 7
-#define GNUMBERS 8
+#define GAMING 5
+#define GAMING2 6
+#define GNUMBERS 7
 
 /*
  *  &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
@@ -145,21 +144,13 @@
                                  &bt BT_PRV       &bt BT_NXT       &none           &none        &none   &none
                         >;
                 };
-                colemak_dh_layer {
-                        bindings = <
-                    &none  &kp Q   &kp W   &kp F   &kp P   &kp B    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
-                    &none  &kp A   &kp R   &kp S   &kp T   &kp G    &kp M   &kp N   &kp E   &kp I   &kp O   &none
-                    &none  &kp Z   &kp X   &kp C   &kp D   &kp V    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
-                                    &lt NUM ESC  &lt NAV SPACE  &lt RAISE RET  &lt SYM BSPC  &tcd
-                >;
-                };
                 gaming_layer {
             label = "GAMING";
             bindings = <
                     &kp ESC   &kp TAB   &kp Q  &kp W  &kp E  &kp R   &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
                     &kp F  &kp LSHFT   &kp A   &kp S   &kp D   &kp H    &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp O   &none
                     &kp M  &kp LCTRL   &kp Z   &kp X   &kp C   &kp V    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
-                                    &kp ESC  &kp SPACE &sl GNUMBERS     &lt RAISE RET  &lt SYM BSPC  &tcd
+                                    &kp ESC  &kp SPACE &sl GNUMBERS     &trans  &trans  &trans
             >;
         };
                 gaming_layer_2 {
@@ -177,7 +168,7 @@
                     &trans  &trans   &trans  &trans  &trans   &kp F10
                     &trans  &kp N1   &kp N2  &kp N3  &kp N4   &kp N5
                     &trans  &kp N6   &kp N7  &kp N8  &kp N9   &trans
-                                            &trans  &trans &kp K0 
+                                            &trans  &trans &kp N0 
 
                     &kp F1     &kp F2     &kp F3     &kp F4     &kp C_VOL_UP &none
                     &kp F5     &kp F6     &kp F7     &kp F8     &kp C_VOL_DN &none
