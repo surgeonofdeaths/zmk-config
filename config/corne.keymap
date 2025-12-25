@@ -131,7 +131,7 @@
                 gaming_layer {
             label = "GAMING";
             bindings = <
-                    &tog DEFAULT &kp TAB   &kp Q  &kp W  &kp E  &kp R   &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
+                    &tog GAMING &kp TAB   &kp Q  &kp W  &kp E  &kp R   &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
                     &kp F  &kp LSHFT   &kp A   &kp S   &kp D   &kp H    &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp O   &none
                     &kp M  &kp LCTRL   &kp Z   &kp X   &kp C   &kp V    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
                                     &kp ESC  &kp SPACE &sl GNUMBERS     &trans  &trans  &trans
