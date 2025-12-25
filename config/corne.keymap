@@ -14,7 +14,7 @@
 #define COLEMAK_DH 5
 #define GAMING 6
 #define GAMING2 7
-#define GAMING3 8
+#define GNUMBERS 8
 
 /*
  *  &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
@@ -37,12 +37,6 @@
                 quick-tap-ms = <0>;
                 flavor = "balanced";
                 bindings = <&kp>, <&kp>;
-            };
-            tcd: toggle_colemak_dance {
-                compatible = "zmk,behavior-tap-dance";
-                #binding-cells = <0>;
-                tapping-term-ms = <500>;
-                bindings = <&kp LC(B)>, <&tog COLEMAK_DH>;
             };
         };
         combos {
@@ -91,7 +85,6 @@
                 layers = <0 6>;
             };
 
-/*
             question_mark {
                 timeout-ms = <30>;
                 key-positions = <21 22>;
@@ -115,7 +108,7 @@
     &none   &kp Q        &kp W       &kp E       &kp R       &kp T      &kp Y    &kp U       &kp I       &kp O       &kp P         &none
     &none   &hm LGUI A   &hm LALT S  &hm LCTL D  &hm LSFT F  &kp G      &kp H    &hm RSFT J  &hm RCTL K  &hm RALT L  &hm RGUI SQT  &none
     &none   &kp Z        &kp X       &kp C       &kp V       &kp B      &kp N    &kp M       &kp COMMA   &kp DOT     &kp FSLH      &none 
-                 &lt NUM ESC &lt NAV SPACE &kp TAB           &lt RAISE RET    &lt SYM BSPC &tcd
+                 &lt NUM ESC &lt NAV SPACE &kp TAB           &lt RAISE RET    &lt SYM BSPC &kp LC(B)
                         >;
                 };
                 nav_layer {
@@ -163,10 +156,10 @@
                 gaming_layer {
             label = "GAMING";
             bindings = <
-                    &kp ESC   &kp TAB   &kp Q   &kp W   &kp E   &kp R    &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
-                    &kp B  &kp LSHFT   &kp A   &kp S   &kp D   &kp F    &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp O   &none
+                    &kp ESC   &kp TAB   &kp Q  &kp W  &kp E  &kp R   &kp J   &kp L   &kp U   &kp Y   &kp SQT &none
+                    &kp F  &kp LSHFT   &kp A   &kp S   &kp D   &kp H    &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp O   &none
                     &kp M  &kp LCTRL   &kp Z   &kp X   &kp C   &kp V    &kp K   &kp H   &kp COMMA &kp DOT &kp FSLH &none
-                                    &lt GAMING2 ESC  &kp SPACE &lt GAMING3 SPACE  &lt RAISE RET  &lt SYM BSPC  &tcd
+                                    &kp ESC  &kp SPACE &sl GNUMBERS     &lt RAISE RET  &lt SYM BSPC  &tcd
             >;
         };
                 gaming_layer_2 {
@@ -178,13 +171,13 @@
                                     &trans  &kp SPACE &trans   &trans  &trans  &trans
             >;
         };
-                gaming_layer3 {
-            label = "GAMING3";
+                gnumbers_layer {
+            label = "GNUMBERS";
             bindings = <
-                    &trans  &trans   &kp N1  &trans  &kp N2   &kp N3
-                    &trans  &kp N4   &trans  &trans  &trans   &kp N5
-                    &trans  &kp N6   &kp N7  &kp N8  &kp N9   &kp N0   
-                                            &trans  &kp SPACE &trans 
+                    &trans  &trans   &trans  &trans  &trans   &kp F10
+                    &trans  &kp N1   &kp N2  &kp N3  &kp N4   &kp N5
+                    &trans  &kp N6   &kp N7  &kp N8  &kp N9   &trans
+                                            &trans  &trans &kp K0 
 
                     &kp F1     &kp F2     &kp F3     &kp F4     &kp C_VOL_UP &none
                     &kp F5     &kp F6     &kp F7     &kp F8     &kp C_VOL_DN &none
