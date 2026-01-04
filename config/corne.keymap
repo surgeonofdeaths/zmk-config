@@ -76,6 +76,12 @@
                 bindings = <&kp LBKT>;
                 layers = <0>;
             };
+            cyrillic_zh {
+                timeout-ms = <30>;
+                key-positions = <21 22>;
+                bindings = <&kp SEMI>;
+                layers = <0>;
+            };
             /* gaming_layer { */
             /*     timeout-ms = <30>; */
             /*     key-positions = <3 5>; */
